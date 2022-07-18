@@ -3,9 +3,14 @@ import NavbarItem from "./NavBarItem";
 import styled from "styled-components";
 
 const NavHeader = styled.div`
-  margin-right: 30px;
+  width: 100%;
+  padding-right: 10%;
   display: flex;
   justify-content: flex-end;
+  color: white;
+  background-color: rgb(55, 55, 55);
+
+  font-size: 13px;
 `;
 
 const Navbar = () => {

@@ -4,7 +4,9 @@ import Card from "./Card";
 import styled from "styled-components";
 
 const TitleStyle = styled.div`
+  margin-top: 25px;
   text-align: center;
+  font-size: 20px;
 `;
 const CardContainerStyle = styled.div`
   max-width: 1390px;

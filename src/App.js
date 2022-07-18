@@ -1,7 +1,14 @@
 import React from "react";
 import NavBar from "./components/NavBar";
 import CardList from "./components/CardList";
-import Title from "./components/Title";
+import styled from "styled-components";
+
+const OuterContainer = styled.div`
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 function App() {
   let contentObj = {
@@ -21,10 +28,10 @@ function App() {
   };
 
   return (
-    <>
+    <OuterContainer>
       <NavBar />
       <CardList contentObject={contentObj} />
-    </>
+    </OuterContainer>
   );
 }
 
