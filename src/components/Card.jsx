@@ -1,6 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
+let CardOutlineStyle = styled.div`
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+`;
 let CardStyle = styled.div`
   position: relative;
   height: 300px;
@@ -11,13 +18,6 @@ let CardStyle = styled.div`
   &:hover ${CardOutlineStyle} {
     transform: rotateY(180deg);
   }
-`;
-let CardOutlineStyle = styled.div`
-  position: relative;
-  height: 100%;
-  width: 100%;
-  transition: transform 1s;
-  transform-style: preserve-3d;
 `;
 let FrontBackStyles = `
 position: absolute;
